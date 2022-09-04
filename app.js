@@ -3,19 +3,11 @@ let submitButton = document.getElementById("btn")
 let ratingNumber = document.getElementById("rating")
 
 
-
-
-
-
-
-
-
 function reply_click(x) {
   
   wichButtonClicked = x
-  console.log(wichButtonClicked)
-
 }
+
 
 function changeCards() {
   let firstCard = document.getElementById("first-card")
@@ -25,9 +17,6 @@ function changeCards() {
 }
 
 
-
-
-
 submitButton.onclick=function(){
   if (wichButtonClicked == null){
     alert("Please choose rating!")
@@ -35,9 +24,6 @@ submitButton.onclick=function(){
     changeCards()
     ratingNumber.textContent = wichButtonClicked
   }
-  
-  
-
 }
 
 
