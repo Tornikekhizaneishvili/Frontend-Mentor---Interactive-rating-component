@@ -1,5 +1,6 @@
-let wichButtonClicked=0
+let wichButtonClicked = null
 let submitButton = document.getElementById("btn")
+let ratingNumber = document.getElementById("rating")
 
 
 
@@ -9,20 +10,18 @@ let submitButton = document.getElementById("btn")
 
 
 
-
-function reply_click(clicked_id) {
+function reply_click(x) {
   
-  wichButtonClicked = clicked_id
-  console.log(clicked_id);
+  wichButtonClicked = x
+  console.log(wichButtonClicked)
 
-  
 }
 
 function changeCards() {
-  var firstCard = document.getElementById("first-card");
-  firstCard.setAttribute("style" , "display: none;");
-  var secondCard = document.getElementById("second-card");
-  secondCard.setAttribute("style" , "display: flex;");
+  let firstCard = document.getElementById("first-card")
+  firstCard.setAttribute("style" , "display: none;")
+  let secondCard = document.getElementById("second-card")
+  secondCard.setAttribute("style" , "display: flex;")
 }
 
 
@@ -30,7 +29,14 @@ function changeCards() {
 
 
 submitButton.onclick=function(){
-  changeCards()
+  if (wichButtonClicked == null){
+    alert("Please choose rating!")
+  }else{
+    changeCards()
+    ratingNumber.textContent = wichButtonClicked
+  }
+  
+  
 
 }
 
