@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive rating component</title>
-  <script src="app.js"></script>
+  
 </head>
 
 <body>
   <!-- Rating state start -->
 
-  <div class="rating-card">
+  <div class="rating-card" id="first-card">
     <div>
       <img class="rating-card-image" src="./images/icon-star.svg" alt="icon star">
     </div>
@@ -33,7 +33,7 @@
       <button  id="5" onClick="reply_click(this.id)">5</button>
     </div>
     <div class="submit-button">
-      <button id="myBtn">SUBMIT</button>
+      <button id="btn">SUBMIT</button>
     </div>
   </div>
 
@@ -41,7 +41,7 @@
 
   <!-- Thank you state start -->
 
-  <div class="rating-card thankyou-card">
+  <div class="rating-card thankyou-card" id="second-card">
     <div class="thankyou-card-image">
       <img src="./images/illustration-thank-you.svg" alt="icon star">
     </div>
@@ -58,7 +58,7 @@
   </div>
 
   <!-- Thank you state end -->
-
+  <script src="./app.js"></script>
 
 
 </body>

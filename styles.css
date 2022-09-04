@@ -101,7 +101,7 @@ p {
 }
 
 .thankyou-card {
-    
+    display: none;
     align-items: center;
     text-align: center;
     justify-content: space-around;
